@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Discover modern men's fashion at ZK Fashion. Shop T-shirts, shirts, jeans and everyday essentials.">
+  <title>ZK Fashion | Style That Defines You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">WELCOME TO ZK FASHION <span>—</span> EVERYDAY STYLE, ELEVATED</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="ZK Fashion home"><span class="brand-mark">ZK</span><span class="brand-name">FASHION</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#new">NEW ARRIVALS</a><a href="#shop">SHOP</a><a href="#about">OUR STORY</a><a href="#contact">CONTACT</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="search-toggle" aria-label="Show search">⌕</button>
+      <button class="cart-btn" id="cart-open" aria-label="Open shopping bag">BAG <span id="cart-count">0</span></button>
+      <button class="menu-btn" id="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <div class="search-bar hidden" id="search-bar"><input id="search-input" type="search" placeholder="Search T-shirts, shirts, jeans..."><button id="search-clear">CLEAR</button></div>
+  <nav class="mobile-nav hidden" id="mobile-nav"><a href="#new">NEW ARRIVALS</a><a href="#shop">SHOP</a><a href="#about">OUR STORY</a><a href="#contact">CONTACT</a></nav>
+
+  <main>
+    <section class="hero" id="new">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="gold-line"></span> THE NEW MEN'S EDIT</p>
+        <h1>STYLE THAT<br><em>DEFINES YOU.</em></h1>
+        <p class="hero-text">Confident essentials. Clean silhouettes. Everyday pieces made to move with you.</p>
+        <a class="button button-gold" href="#shop">EXPLORE COLLECTION <span>↗</span></a>
+        <div class="hero-note"><span class="note-dot"></span> NEW SEASON • NEW ENERGY</div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Abstract premium fashion editorial artwork">
+        <div class="art-circle"></div><div class="art-shadow"></div>
+        <div class="art-label">ZK / 001<br><span>MEN'S<br>COLLECTION</span></div>
+        <div class="art-figure"><div class="figure-head"></div><div class="figure-body"></div></div>
+        <div class="art-caption">OWN YOUR<br>EVERYDAY.</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><b>01</b><span>EVERYDAY ESSENTIALS</span></div><div><b>02</b><span>CURATED MEN'S STYLE</span></div><div><b>03</b><span>MADE FOR YOUR MOMENT</span></div>
+    </section>
+
+    <section class="shop-section section-wrap" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">FIND YOUR FIT</p><h2>THE COLLECTION</h2></div><p class="section-sub">A considered wardrobe starts<br>with the right essentials.</p></div>
+      <div class="category-row" id="category-filters">
+        <button class="filter-chip active" data-category="All">ALL</button>
+        <button class="filter-chip" data-category="T-Shirts">T-SHIRTS</button>
+        <button class="filter-chip" data-category="Shirts">SHIRTS</button>
+        <button class="filter-chip" data-category="Jeans">JEANS</button>
+        <button class="filter-chip" data-category="Track Pants">TRACK PANTS</button>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="demo-note">Demo catalogue: replace sample products, prices and images with your actual stock before accepting orders.</p>
+    </section>
+
+    <section class="brand-story" id="about">
+      <div class="story-stamp">ZK<br><small>FASHION</small></div>
+      <div><p class="eyebrow">THE ZK POINT OF VIEW</p><h2>LESS NOISE.<br><em>MORE STYLE.</em></h2><p>We believe great style is personal. ZK Fashion is a men's clothing destination built around versatile pieces, confident details and the freedom to make every look your own.</p></div>
+    </section>
+
+    <section class="newsletter section-wrap" id="contact">
+      <div><p class="eyebrow">STAY IN THE LOOP</p><h2>YOUR STYLE,<br>YOUR WAY.</h2><p>Questions about sizes, availability or an order? Talk to us directly.</p></div>
+      <a class="button button-outline" id="contact-whatsapp" href="#" target="_blank" rel="noopener">CHAT ON WHATSAPP <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">ZK</span><span class="brand-name">FASHION</span></a><p>STYLE THAT DEFINES YOU.</p><small>© <span id="year"></span> ZK Fashion. All rights reserved.</small></footer>
+
+  <div class="overlay hidden" id="overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag">
+    <div class="drawer-head"><h2>YOUR BAG <span id="drawer-count">(0)</span></h2><button class="close-btn" id="cart-close" aria-label="Close bag">×</button></div>
+    <div class="cart-items" id="cart-items"><p class="empty-cart">Your bag is waiting for something good.</p></div>
+    <div class="drawer-bottom"><div class="subtotal"><span>SUBTOTAL</span><strong id="cart-total">₹0</strong></div><p class="shipping-note">Shipping and final availability will be confirmed on WhatsApp.</p><button class="button button-gold full" id="checkout">ORDER ON WHATSAPP <span>↗</span></button></div>
+  </aside>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
